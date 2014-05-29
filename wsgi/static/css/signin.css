@@ -2427,7 +2427,7 @@ label.button.load-more.error {
         min-height: 310px;
         padding-left: 310px;
         background-size: 210px 295px;
-        background: transparent url(/img/logo-landingpage.png) no-repeat 0 10px;
+        background: transparent url(/static/img/logo-landingpage.png) no-repeat 0 10px;
     }
     .authentication-page-container .alert { margin-bottom: 20px }
     .authentication-page-container:before {
