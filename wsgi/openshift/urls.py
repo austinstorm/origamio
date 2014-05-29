@@ -6,11 +6,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'origamio.views.home', name='home'),
-    # url(r'^origamio/', include('origamio.foo.urls')),
-    
-    # signin
-    url(r'^signin/', 'account/signin.html'),
+    url(r'^$', 'openshift.views.home', name='home'),
+    # url(r'^openshift/', include('openshift.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
