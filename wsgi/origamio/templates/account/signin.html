@@ -1,10 +1,49 @@
-<html>
-<head>
-  <script></script>
-</head>
-<body>
-    <h1>THIS IS THE SIGNIN PAGE!</h1>
-  <div>let's <a href="/admin">admin </a></div>
-  <script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.5/tracker.js" data-customer="8b6b8bdc212b448eb8415b773c1ae6c7"></script>
-</body>
-</html>
+{% extends 'account/base.html' %}
+
+{% block title %}Sign in{% endblock %}
+
+{% block body_block %}
+    <h1 class="authentication-header">Sign up</h1>
+      <a class="button large facebook fill vertical-padding" href="/web/20140328004132/https://readmill.com/auth/facebook?intent=continue">
+      <i class="icon-facebook"></i>Continue with Facebook
+    </a>
+
+    <div class="authentication-form" id="authentication-form">
+      <div class="authentication-form-header">
+        <h2>Or using email and password</h2>
+      </div>
+
+      <div class="basic-signup-form" id="basic-signup">
+        <form accept-charset="UTF-8" action="/web/20140328004132/https://readmill.com/signup" data-one-submit-form="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/5zeSQEYoi1ue1eCLJlLHxPsFQsslDBelV+YgEyD4Aw="></div>
+          <div class="field">
+            <label for="field-authentication-form-c1zg-email">Email</label>
+            <input name="user[email]" id="field-authentication-form-c1zg-email" type="email" placeholder="Enter your email" value="" autocorrect="off">
+          </div>
+
+          <div class="field">
+            <label for="field-authentication-form-c1zg-password">Password</label>
+            <input name="user[password]" id="field-authentication-form-c1zg-password" type="password" placeholder="Choose a password">
+          </div>
+
+          <div class="form-actions">
+              <div class="form-actions-label">
+                <div class="vertically-center">
+                  <input type="hidden" name="user[subscribed_to_newsletter]" value="0">
+                  <input id="field-authentication-form-c1zg-subscribe-to-newsletter" type="checkbox" name="user[subscribed_to_newsletter]" value="1">
+                  <label for="field-authentication-form-c1zg-subscribe-to-newsletter">Subscribe to our newsletter</label>
+                </div>
+              </div>
+            <button type="submit" class="primary button large"><i class="icon-readmill mobile-hide"></i> Sign up</button>
+          </div>
+    </form>  </div>
+    </div>
+
+    <div class="authentication-page-footer">
+          <span class="authentication-footer-item">
+            <a href="/web/20140328004132/https://readmill.com/signin" data-entry-form="sign-in">Sign in if you already have an account</a>
+          </span>
+          <span class="authentication-footer-item">
+            <a href="/web/20140328004132/https://readmill.com/about">What is Origam.io?</a>
+          </span>
+    </div>
+{% endblock %}

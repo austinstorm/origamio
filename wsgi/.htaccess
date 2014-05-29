@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^img/(.+)$ /static/img/$1 [L]
+RewriteRule ^css/(.+)$ /static/css/$1 [L]
