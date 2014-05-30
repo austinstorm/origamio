@@ -3,8 +3,8 @@
 {% block title %}Sign in{% endblock %}
 
 {% block body_block %}
-    <h1 class="authentication-header">Sign up</h1>
-      <a class="button large facebook fill vertical-padding" href="/web/20140328004132/https://readmill.com/auth/facebook?intent=continue">
+  <h1 class="authentication-header">Sign in</h1>
+      <a class="button large facebook fill vertical-padding" href="https://origam.io/auth/facebook?intent=continue">
       <i class="icon-facebook"></i>Continue with Facebook
     </a>
 
@@ -14,36 +14,29 @@
       </div>
 
       <div class="basic-signup-form" id="basic-signup">
-        <form accept-charset="UTF-8" action="/web/20140328004132/https://readmill.com/signup" data-one-submit-form="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/5zeSQEYoi1ue1eCLJlLHxPsFQsslDBelV+YgEyD4Aw="></div>
+        <form accept-charset="UTF-8" action="./signin_files/signin.htm" data-one-submit-form="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="xvH3Y7niDE0PhqhJVT+h4TgRBzT48oJkGId2xxJBUIw="></div>
           <div class="field">
-            <label for="field-authentication-form-c1zg-email">Email</label>
-            <input name="user[email]" id="field-authentication-form-c1zg-email" type="email" placeholder="Enter your email" value="" autocorrect="off">
+            <label for="field-authentication-form-4wyc-email">Email</label>
+            <input name="user[email]" id="field-authentication-form-4wyc-email" type="email" placeholder="Email" value="" autocorrect="off">
           </div>
 
           <div class="field">
-            <label for="field-authentication-form-c1zg-password">Password</label>
-            <input name="user[password]" id="field-authentication-form-c1zg-password" type="password" placeholder="Choose a password">
+            <label for="field-authentication-form-4wyc-password">Password</label>
+            <input name="user[password]" id="field-authentication-form-4wyc-password" type="password" placeholder="Password">
           </div>
 
           <div class="form-actions">
-              <div class="form-actions-label">
-                <div class="vertically-center">
-                  <input type="hidden" name="user[subscribed_to_newsletter]" value="0">
-                  <input id="field-authentication-form-c1zg-subscribe-to-newsletter" type="checkbox" name="user[subscribed_to_newsletter]" value="1">
-                  <label for="field-authentication-form-c1zg-subscribe-to-newsletter">Subscribe to our newsletter</label>
-                </div>
-              </div>
-            <button type="submit" class="primary button large"><i class="icon-readmill mobile-hide"></i> Sign up</button>
+            <button type="submit" class="primary button large"><i class="icon-readmill mobile-hide"></i> Sign in</button>
           </div>
     </form>  </div>
     </div>
 
     <div class="authentication-page-footer">
           <span class="authentication-footer-item">
-            <a href="/web/20140328004132/https://readmill.com/signin" data-entry-form="sign-in">Sign in if you already have an account</a>
+            <a href="https://origam.io/signin/forgot">Forgot your password?</a>
           </span>
           <span class="authentication-footer-item">
-            <a href="/web/20140328004132/https://readmill.com/about">What is Origam.io?</a>
+            <a href="https://origam.io/auth/twitter?intent=sign_in">Sign in with Twitter</a>
           </span>
     </div>
 {% endblock %}

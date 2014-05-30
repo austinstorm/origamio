@@ -1,0 +1,55 @@
+{% extends 'account/base.html' %}
+
+{% block title %}Sign up{% endblock %}
+
+{% block body_block %}
+  <h1 class="authentication-header" style="padding-bottom: 0px;">Sign up</h1>
+
+    <div class="authentication-form" id="authentication-form" style="padding-top: 0px;">
+      <div class="authentication-form-header">
+                <h2>Origam.io charges a one-time signup fee of <strong>$5.57</strong> for new members. This helps discourage spammers and defrays some of the costs of running the site. The fee is based on the formula (number of users * $0.001), so the earlier you join, the less you pay.</h2>
+        <h2 style="padding-top: 10px;">The fee is <em>fully refundable</em> for three days following signup.</h2>
+
+      </div>
+
+      <div class="basic-signup-form" id="basic-signup">
+        <form accept-charset="UTF-8" action="/web/20140328004132/https://origam.io/signup" data-one-submit-form="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/5zeSQEYoi1ue1eCLJlLHxPsFQsslDBelV+YgEyD4Aw="></div>
+          <div class="field">
+            <label for="field-authentication-form-c1zg-email">Email</label>
+            <input name="user[email]" id="field-authentication-form-c1zg-email" type="email" placeholder="Enter your email" value="" autocorrect="off">
+          </div>
+
+          <div class="field">
+            <label for="field-authentication-form-c1zg-password">Password</label>
+            <input name="user[password]" id="field-authentication-form-c1zg-password" type="password" placeholder="Choose a password">
+          </div>
+
+            <div class="field">
+              <label for="account-type">Account Type</label>
+                <input type="radio" name="account-type" value="basic">Basic Account ($5.57)</input>
+                <input type="radio" name="account-type" value="plus">Plus Account ($5.57 + $4/month)</input>
+            </select>
+            </div>
+
+          <div class="form-actions">
+              <div class="form-actions-label">
+                <div class="vertically-center">
+                  <input type="hidden" name="user[subscribed_to_newsletter]" value="0">
+                  <input id="field-authentication-form-c1zg-subscribe-to-newsletter" type="checkbox" name="user[subscribed_to_newsletter]" value="1">
+                  <label for="field-authentication-form-c1zg-subscribe-to-newsletter">Subscribe to our newsletter</label>
+                </div>
+              </div>
+            <button type="submit" class="primary button large"><i class="icon-readmill mobile-hide"></i> Sign up</button>
+          </div>
+    </form>  </div>
+    </div>
+
+    <div class="authentication-page-footer">
+          <span class="authentication-footer-item">
+            <a href="/web/20140328004132/https://origam.io/signin" data-entry-form="sign-in">Sign in if you already have an account</a>
+          </span>
+          <span class="authentication-footer-item">
+            <a href="/web/20140328004132/https://origam.io/about">What is Origam.io?</a>
+          </span>
+    </div>
+{% endblock %}
