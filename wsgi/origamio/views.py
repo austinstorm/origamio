@@ -6,3 +6,9 @@ def home(request):
 
 def signin(request):
     return render_to_response('account/signin.html')
+
+def signup(request):
+    return render_to_response('account/signup.html')
+
+def lost(request):
+    return render_to_response('account/lost.html')
