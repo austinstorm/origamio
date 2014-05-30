@@ -1,3 +1,5 @@
+# I DON"T THINK I NEED THIS ANYMORE FYI
+
 #!/usr/bin/env python
 import hashlib, imp, os, sqlite3
 
