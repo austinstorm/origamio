@@ -5,3 +5,5 @@
 *~
 .project
 .pydevproject
+# Ignore bat files
+*.bat
