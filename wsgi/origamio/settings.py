@@ -156,6 +156,28 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    # Austin Added: python-social-auth:
+    'social.apps.django_app.default',
+)
+
+# -----------------------------------------------------------
+# Settings added by the above "INSTALLED_APPS"
+# -----------------------------------------------------------
+
+# Added by python-social-auth
+
+AUTHENTICATION_BACKENDS = (
+  # Added by python-social-auth
+  'social.backends.google.GoogleOAuth',
+  'social.backends.twitter.TwitterOAuth',
+  # this line maintains the default email/password Django auth
+  'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    # Added by python-social-auth:
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
 )
 
 # A sample logging configuration. The only tangible logging
