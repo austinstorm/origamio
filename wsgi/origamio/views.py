@@ -12,3 +12,6 @@ def signup(request):
 
 def lost(request):
     return render_to_response('account/lost.html')
+
+def 404(request):
+    return render_to_response('home/404.html')

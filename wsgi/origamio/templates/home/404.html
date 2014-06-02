@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>This page does not exist (404)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="{% static "css/error_pages.css" %}" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="main">
+    <div id="logo"></div>
+    <div id="info">
+      <h1>We couldn&rsquo;t find the page you&rsquo;re looking for.</h1>
+      <p>You may have clicked an expired link or mistyped the address. Please check the address or use one of the links below.</p>
+      <a href="http://readmill.com" title="Return home">Return home</a>
+      <a href="#previous-page" title="Go back to the previous page" onclick="history.go(-1); return false;">Go back to the previous page</a>
+    </div>
+</div>
+</body>
+</html>

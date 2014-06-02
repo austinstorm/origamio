@@ -21,3 +21,5 @@ urlpatterns = patterns('',
     # Line for python-social-auth
     url('', include('social.apps.django_app.urls', namespace='social')),
 )
+
+handler404 = 'origamio.views.404'

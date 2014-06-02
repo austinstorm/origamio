@@ -174,6 +174,8 @@ AUTHENTICATION_BACKENDS = (
   'django.contrib.auth.backends.ModelBackend',
 )
 
+AUTH_USER_MODEL = 'customauth.MyUser'
+
 TEMPLATE_CONTEXT_PROCESSORS = (
     # Added by python-social-auth:
     'social.apps.django_app.context_processors.backends',
